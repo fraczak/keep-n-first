@@ -1,0 +1,28 @@
+{
+  "name": "keep-n-first",
+  "version": "1.0.0",
+  "description": "Maintain 'n' smallest elements in order",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "coffee -c .",
+    "test": "coffee test.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fraczak/keep-n-first.git"
+  },
+  "keywords": [
+    "sorted",
+    "array"
+  ],
+  "author": "Wojciech Fraczak <fraczak@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/fraczak/keep-n-first/issues"
+  },
+  "homepage": "https://github.com/fraczak/keep-n-first#readme",
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "lodash": "^3.10.1"
+  }
+}
