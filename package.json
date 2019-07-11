@@ -1,6 +1,6 @@
 {
   "name": "keep-n-first",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Maintain 'n' smallest elements in order",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/fraczak/keep-n-first#readme",
   "devDependencies": {
-    "coffee-script": "^1.10.0",
-    "lodash": "^3.10.1"
+    "coffeescript": "^2.4.1"
   }
 }

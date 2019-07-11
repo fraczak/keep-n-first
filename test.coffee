@@ -1,4 +1,3 @@
-ld = require "lodash"
 KeepNFirst = require "./"
 
 o = new KeepNFirst(100)
@@ -8,7 +7,7 @@ for i in [1000000..1]
 console.log o.values
 
 o = new KeepNFirst 3, (a,b) ->
-    ld.max(a) - ld.max(b)
+    Math.max(a...) - Math.max(b...)
 
 for e in [
     [1,2,3]
@@ -28,12 +27,11 @@ a = (Math.random() for x in [0..1000000])
 for e in a
     o.add e
 
-test = ld a
-    .sortBy()
-    .take 100
-    .zip o.values
-    .every ([a,b]) ->
-        a is b
+test = a
+    .sort (x,y) -> x - y
+    .slice 0, 100
+    .every (x,i) ->
+        x is o.values[i]
 
 if test
     console.log "TEST PASSED SUCCESSFULLY"
